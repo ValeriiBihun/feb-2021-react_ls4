@@ -8,7 +8,7 @@ export default function UserDetails(props) {
     // console.log(id);
     let[user,setUser]=useState([null]);
     useEffect( ()=>{
-        fetch('https://jsonplaceholder.typicode.com/users'+id)
+        fetch('https://jsonplaceholder.typicode.com/users/'+id)
             .then(value=>value.json())
             .then(value=>{
                 // setUser([...value]);
